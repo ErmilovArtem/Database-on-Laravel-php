@@ -1,2 +1,2 @@
-# php_lab3
+# php_lab2
 лаба по php
