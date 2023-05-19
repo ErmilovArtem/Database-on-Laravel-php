@@ -31,5 +31,3 @@ class CategoryController extends Controller
         return view('category.show', compact('category', 'banners'));
     }
 }
-
-
