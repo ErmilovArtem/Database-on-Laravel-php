@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'This is start page. If u wanna go to /category/{code}';
 });
+
+Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
